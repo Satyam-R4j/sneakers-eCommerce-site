@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lato", serif;
   padding: 0;
@@ -189,6 +193,70 @@ nav {
   position: relative;
 }
 
+.payment{
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.payTitle{
+  font-size: 20px;
+  color: lightgray;
+
+}
+
+label{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.payInput{
+  padding: 10px;
+  margin: 10px 0px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.cardIcon{
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  text-align: center;
+
+}
+
+.cardInfo{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.sm{
+  width: 30%;
+}
+
+.payButton{
+  position: absolute;
+  height: 40px;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+}
+
+.payInput::placeholder{
+  color: lightgray;
+}
+
+
 .productImg {
   width: 50%;
 }
@@ -201,52 +269,55 @@ nav {
   padding: 50px;
 }
 
-.productTitle{
-    font-size: 75px;
-    font-weight: 900;
+.productTitle {
+  font-size: 75px;
+  font-weight: 900;
 }
 
-.productDesc{
-    font-size: 24;
-    color: gray;
+.productDesc {
+  font-size: 24;
+  color: gray;
 }
 
-.colors,.sizes{
-    display: flex;
-    margin-bottom: 20px;
+.colors,
+.sizes {
+  display: flex;
+  margin-bottom: 20px;
 }
 
-.color{
-    width: 32px;
-    height: 32px;
-    border-radius: 5px;
-    background-color: black;
-    margin-right: 10px;
-    cursor: pointer;
+.color {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: black;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-.color:last-child{
-    background-color: darkblue;
+.color:last-child {
+  background-color: darkblue;
 }
 
-.size{
-    padding: 5px 20px;
-    border: 1px solid black;
-    margin-right: 10px;
-    cursor: pointer;
-    font-size: 20px;
+.size {
+  padding: 5px 20px;
+  border: 1px solid black;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
-.productButton{
-    float: right;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
+.productButton {
+  float: right;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.productButton:hover{
-    background-color: white;
-    color: black;
+.productButton:hover {
+  background-color: white;
+  color: black;
 }
+
+
